@@ -3,7 +3,7 @@
 defaults:
   device_name: 'SDM630'
   modbus_device_id: 'sdm'
-  modbus_device_address: '0x10'
+  modbus_device_address: '0x14'
   modbus_id: 'pomiary_modbus'
   update_interval: '60s'
 
