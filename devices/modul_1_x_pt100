@@ -1,3 +1,4 @@
+modbus_controller: 
 - id: pt100
   address: 1
   modbus_id: pomiary_modbus
