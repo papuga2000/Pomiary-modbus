@@ -4,7 +4,7 @@ defaults:
   device_name: 'SDM630'
   modbus_device_id: 'sdm'
   modbus_device_address: '0x01'
-  modbus_id: 'boneio_modbus'
+  modbus_id: 'pomiary_modbus'
   update_interval: '60s'
 
 modbus_controller:
