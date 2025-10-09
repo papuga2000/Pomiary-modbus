@@ -1,9 +1,9 @@
 modbus_controller:    
-  - id: ebyte
-    address: 12
-    modbus_id: pomiary_modbus 
-    setup_priority: -10
-    update_interval: 30s
+- id: ebyte
+  address: 12
+  modbus_id: pomiary_modbus 
+  setup_priority: -10
+  update_interval: 30s
 
 sensor:
 - platform: modbus_controller #Ua
