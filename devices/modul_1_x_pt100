@@ -1,6 +1,6 @@
 - id: pt100
   address: 1
-  modbus_id: boneio_modbus
+  modbus_id: pomiary_modbus
   setup_priority: -10
   update_interval: 10s
 
