@@ -6,7 +6,6 @@ modbus_controller:
     update_interval: 5s
 
 sensor:
-
   - platform: modbus_controller #Ua
     modbus_controller_id: pt100_1
     id: pt100_rozdzielnia
