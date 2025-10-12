@@ -1,5 +1,5 @@
 modbus_controller:
-  - id: pt100
+  - id: pt100_1
     address: 13
     modbus_id: pomiary_modbus
     setup_priority: -10
