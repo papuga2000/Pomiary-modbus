@@ -1,5 +1,5 @@
 modbus_controller:
-  - id: pt100
+  - id: pt100x8
     address: 13
     modbus_id: pomiary_modbus
     setup_priority: -10
@@ -8,7 +8,7 @@ modbus_controller:
 sensor:
 
   - platform: modbus_controller #Ua
-    modbus_controller_id: pt100
+    modbus_controller_id: pt100x8
     id: pt100_testowa_0
     name: "Temperatura testowa 0"
     state_class: measurement
