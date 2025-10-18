@@ -1,6 +1,6 @@
 modbus_controller:
   - id: pt100x8
-    address: 11
+    address: 13
     modbus_id: pomiary_modbus
     setup_priority: -10
     update_interval: 5s
