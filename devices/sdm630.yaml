@@ -5,7 +5,7 @@ defaults:
   modbus_device_id: 'sdm'
   modbus_device_address: 10     # '0x10'
   modbus_id: 'pomiary_modbus'
-  update_interval: '60s'
+  update_interval: '30s'
 
 modbus_controller:
   - id: ${modbus_device_id}
