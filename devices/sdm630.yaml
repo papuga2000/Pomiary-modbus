@@ -124,18 +124,6 @@ sensor:
     state_class: measurement
 
   - platform: modbus_controller
-    name: ${device_name} Total Power Watt
-    modbus_controller_id: ${modbus_device_id}
-    id: ${modbus_device_id}_total_w
-    address: 34
-    register_type: 'read'
-    accuracy_decimals: 2
-    value_type: FP32
-    unit_of_measurement: W
-    device_class: power
-    state_class: measurement
-
-  - platform: modbus_controller
     name: ${device_name} Total Power Watt Demand
     modbus_controller_id: ${modbus_device_id}
     id: ${modbus_device_id}_total_w_d
