@@ -146,29 +146,29 @@ sensor:
     unit_of_measurement: Hz
     state_class: measurement
 
-  - platform: modbus_controller
-    name: ${device_name} Import Energy Total
-    modbus_controller_id: ${modbus_device_id}
-    id: ${modbus_device_id}_import_total
-    address: 72
-    register_type: 'read'
-    accuracy_decimals: 2
-    value_type: FP32
-    unit_of_measurement: kWh
-    device_class: energy
-    state_class: total_increasing
+  #- platform: modbus_controller
+  #  name: ${device_name} Import Energy Total
+  #  modbus_controller_id: ${modbus_device_id}
+  #  id: ${modbus_device_id}_import_total
+  #  address: 72
+  #  register_type: 'read'
+  #  accuracy_decimals: 2
+  #  value_type: FP32
+  #  unit_of_measurement: kWh
+  #  device_class: energy
+  #  state_class: total_increasing
 
-  - platform: modbus_controller
-    name: ${device_name} Export Energy Total
-    modbus_controller_id: ${modbus_device_id}
-    id: ${modbus_device_id}_export_total
-    address: 74
-    register_type: 'read'
-    accuracy_decimals: 2
-    value_type: FP32
-    unit_of_measurement: kWh
-    device_class: energy
-    state_class: total_increasing
+  #- platform: modbus_controller
+  #  name: ${device_name} Export Energy Total
+  #  modbus_controller_id: ${modbus_device_id}
+  #  id: ${modbus_device_id}_export_total
+  #  address: 74
+  #  register_type: 'read'
+  #  accuracy_decimals: 2
+  #  value_type: FP32
+  #  unit_of_measurement: kWh
+  #  device_class: energy
+  #  state_class: total_increasing
 
   - platform: modbus_controller
     name: ${device_name} Total
