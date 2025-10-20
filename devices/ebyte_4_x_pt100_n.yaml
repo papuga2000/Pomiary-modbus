@@ -39,7 +39,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: ebyte
     id: ebyte_PT100_3
-    name: "Temperatura podloga kuchnia"
+    name: "Temperatura podloga sypialnia"
     state_class: measurement
     device_class: temperature
     unit_of_measurement: "°C"
