@@ -1,6 +1,6 @@
 modbus_controller:
-  - id: pt100x8
-    address: 13
+  - id: nt48b20
+    address: 20
     modbus_id: pomiary_modbus
     setup_priority: -10
     update_interval: 60s
@@ -8,9 +8,9 @@ modbus_controller:
 sensor:
 
   - platform: modbus_controller #Ua
-    modbus_controller_id: pt100x8
-    id: pt100_testowa_1
-    name: "Temperatura testowa 1"
+    modbus_controller_id: nt48b20
+    id: ntc_1
+    name: "NTC 1"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -22,9 +22,9 @@ sensor:
       - multiply: 0.1
 
   - platform: modbus_controller #Ua
-    modbus_controller_id: pt100x8
-    id: pt100_testowa_2
-    name: "Temperatura testowa 2"
+    modbus_controller_id: nt48b20
+    id: ntc_2
+    name: "NTC 2"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -36,9 +36,9 @@ sensor:
       - multiply: 0.1
 
   - platform: modbus_controller #Ua
-    modbus_controller_id: pt100x8
-    id: pt100_testowa_3
-    name: "Temperatura testowa 3"
+    modbus_controller_id: nt48b20
+    id: ntc_3
+    name: "NTC 3"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -50,9 +50,9 @@ sensor:
       - multiply: 0.1
 
   - platform: modbus_controller #Ua
-    modbus_controller_id: pt100x8
-    id: pt100_testowa_4
-    name: "Temperatura testowa 4"
+    modbus_controller_id: nt48b20
+    id: ntc_4
+    name: "NTC 4"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -64,9 +64,9 @@ sensor:
       - multiply: 0.1
 
   - platform: modbus_controller #Ua
-    modbus_controller_id: pt100x8
-    id: pt100_testowa_5
-    name: "Temperatura testowa 5"
+    modbus_controller_id: nt48b20
+    id: ntc_5
+    name: "NTC 5"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -75,4 +75,158 @@ sensor:
     value_type: S_WORD
     accuracy_decimals: 1
     filters:
-      - multiply: 0.1    
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_6
+    name: "NTC 6"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x5
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+      - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_7
+    name: "NTC 7"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x6
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_8
+    name: "NTC 8"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x7
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+      - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_9
+    name: "NTC 9"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x8
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_10
+    name: "NTC 10"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x9
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_11
+    name: "NTC 11"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x10
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_12
+    name: "NTC 12"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x11
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_13
+    name: "NTC 13"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x12
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_14
+    name: "NTC 14"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x13
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+      - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_15
+    name: "NTC 15"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x14
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_16
+    name: "NTC 16"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0x15
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
