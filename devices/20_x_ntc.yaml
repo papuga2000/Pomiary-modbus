@@ -38,7 +38,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_3
-    name: "Sypialnia zasilanie"
+    name: "Sypialnia porada zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -52,7 +52,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_4
-    name: "Sypialnia powrot"
+    name: "Sypialnia porada powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
