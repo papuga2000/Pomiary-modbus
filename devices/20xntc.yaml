@@ -91,7 +91,7 @@ sensor:
     filters:
       - multiply: 0.1
 
-      - platform: modbus_controller #Ua
+  - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_7
     name: "NTC 7"
@@ -119,7 +119,7 @@ sensor:
     filters:
       - multiply: 0.1
 
-      - platform: modbus_controller #Ua
+  - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_9
     name: "NTC 9"
@@ -203,7 +203,7 @@ sensor:
     filters:
       - multiply: 0.1
 
-      - platform: modbus_controller #Ua
+  - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_15
     name: "NTC 15"
