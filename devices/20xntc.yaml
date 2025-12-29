@@ -140,7 +140,7 @@ sensor:
     state_class: measurement
     device_class: temperature
     register_type: holding
-    address: 0x9
+    address: 09
     unit_of_measurement: "°C"
     value_type: S_WORD
     accuracy_decimals: 1
@@ -154,7 +154,7 @@ sensor:
     state_class: measurement
     device_class: temperature
     register_type: holding
-    address: 0x10
+    address: 10
     unit_of_measurement: "°C"
     value_type: S_WORD
     accuracy_decimals: 1
@@ -168,7 +168,7 @@ sensor:
     state_class: measurement
     device_class: temperature
     register_type: holding
-    address: 0x11
+    address: 11
     unit_of_measurement: "°C"
     value_type: S_WORD
     accuracy_decimals: 1
