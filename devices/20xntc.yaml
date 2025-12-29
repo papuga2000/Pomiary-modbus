@@ -10,7 +10,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_1
-    name: "NTC 1"
+    name: "Petla 1 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -24,7 +24,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_2
-    name: "NTC 2"
+    name: "Petla 1 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -38,7 +38,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_3
-    name: "NTC 3"
+    name: "Petla 2 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -52,7 +52,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_4
-    name: "NTC 4"
+    name: "Petla 2 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -66,7 +66,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_5
-    name: "NTC 5"
+    name: "Petla 3 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -80,7 +80,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_6
-    name: "NTC 6"
+    name: "Petla 3 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -94,7 +94,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_7
-    name: "NTC 7"
+    name: "Petla 4 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -108,7 +108,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_8
-    name: "NTC 8"
+    name: "Petla 4 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -122,7 +122,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_9
-    name: "NTC 9"
+    name: "Petla 5 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -136,7 +136,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_10
-    name: "NTC 10"
+    name: "Petla 5 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -150,7 +150,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_11
-    name: "NTC 11"
+    name: "Petla 6 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -164,7 +164,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_12
-    name: "NTC 12"
+    name: "Petla 6 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -178,7 +178,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_13
-    name: "NTC 13"
+    name: "Petla 7 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -192,7 +192,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_14
-    name: "NTC 14"
+    name: "Petla 7 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -206,7 +206,7 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_15
-    name: "NTC 15"
+    name: "Petla 8 zasilanie"
     state_class: measurement
     device_class: temperature
     register_type: holding
@@ -220,11 +220,39 @@ sensor:
   - platform: modbus_controller #Ua
     modbus_controller_id: nt48b20
     id: ntc_16
-    name: "NTC 16"
+    name: "Petla 8 powrot"
     state_class: measurement
     device_class: temperature
     register_type: holding
     address: 15
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_17
+    name: "Rozdzielacz zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 16
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_18
+    name: "Rozdzielacz powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 17
     unit_of_measurement: "°C"
     value_type: S_WORD
     accuracy_decimals: 1
