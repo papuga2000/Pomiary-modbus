@@ -1,0 +1,288 @@
+modbus_controller:
+  - id: nt48b20
+    address: 20
+    modbus_id: pomiary_modbus
+    setup_priority: -10
+    update_interval: 60s
+
+sensor:
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_1
+    name: "Korytarz zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 0
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_2
+    name: "Korytarz powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 1
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_3
+    name: "Sypialnia zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 2
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_4
+    name: "Sypialnia powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 3
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_5
+    name: "Łazienka drzwi zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 4
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_6
+    name: "Łazienka drzwi powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 5
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_7
+    name: "Łazienka okna zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 6
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_8
+    name: "Łazienka okna powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 7
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_9
+    name: "Kuchnia drzwi zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 8
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_10
+    name: "Kuchnia drzwi powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 9
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_11
+    name: "Kuchnia kowolik zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 10
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_12
+    name: "Kuchnia kowolik powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 11
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_13
+    name: "Sypialnia drzwi zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 12
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_14
+    name: "Sypialnia drzwi powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 13
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_15
+    name: "Goscinny drzwi zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 14
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_16
+    name: "Goscinny drzwi powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 15
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_17
+    name: "Goscinny kowolik zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 16
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_18
+    name: "Goscinny kowolik powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 17
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_19
+    name: "Rozdzielacz zasilanie"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 18
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+
+  - platform: modbus_controller #Ua
+    modbus_controller_id: nt48b20
+    id: ntc_20
+    name: "Rozdzielacz powrot"
+    state_class: measurement
+    device_class: temperature
+    register_type: holding
+    address: 19
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
