@@ -3,7 +3,7 @@ modbus_controller:
     address: 20
     modbus_id: pomiary_modbus
     setup_priority: -10
-    update_interval: 60s
+    update_interval: 30s
 
 sensor:
 
